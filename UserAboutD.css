@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+/* nav bar*/
+header {
+  --text: #f4f4f4;
+  --text-inverse: #333;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 3em;
+  transition: background 250ms ease-in;
+  background: var(--background);
+  color: var(--text);
+}
+
+.lspu {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 55px; 
+    height: auto;
+}
+
+.ccs {
+    position: absolute;
+    top: 10px;
+    left: 90px;
+    width: 55px; 
+    height: auto;
+}
+nav {
+    position: relative;
+    width: 575px;
+    height: 50px;
+    background-color: #952323;
+    border-radius: 8px;
+    font-size: 0;
+    margin-left: 50%;
+    margin-top: -3%;
+}
+
+nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+    background-color: #EAD196; 
+}
+
+a {
+    width: 115px;
+}
+
+#nav-animation {
+    width: 100px;
+    left: 0;
+}
+/* main body */
+.home-intro {
+  padding: 50vh 0;
+  background:url(https://i.postimg.cc/pTYBs3hC/bgall.png) no-repeat fixed 100% 100%;
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: white;
+  text-align: center;
+}
+
+main{
+  background-image: url(https://i.postimg.cc/8P2Jyf2R/434811455-1439131923389237-7984613932573745588-n.png);
+  background-repeat: repeat;
+  background-size: 25%;
+}
+.home-about {
+  padding: 4em 0;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #f4f4f4;
+  padding-bottom: 15%;
+}
+.bylaws {
+  width: 85%;
+  height: 85%;
+  margin: 10px;
+  box-shadow: 5px 5px 20px black;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.columns {
+  display: flex;
+  padding-bottom: 15%;
+}
+
+.col + .col {
+  margin-left: 1.5em;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.slide-in {
+  opacity: 0;
+  width: 100%;
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  text-align: justify;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.more-stuff-grid {
+
+  padding: 4em 0;
+  display: grid;
+  grid-gap: 2em;
+  align-items: center;
+  grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(
+      1em,
+      1fr
+    );
+}
+
+.from-left {
+  grid-column: 2 / 3;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.from-right {
+  grid-column: 3 / 4;
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in,
+    -webkit-transform 400ms ease-in;
+  opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* faculty pics */
+.faculty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjust as needed */
+  max-width: 1200px; /* Adjust the maximum width */
+  margin-top: 120%
+}
+
+.card {
+  width: calc(25% - 20px); /* Adjust the width and the margin */
+  margin: 10px;
+  box-shadow: 5px 5px 20px black;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.pic {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.intro {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+  background: rgba(27, 27, 27, 0.5);
+  color: white;
+  transition: height 0.5s, background 0.5s;
+  height: 80px;
+  overflow: hidden;
+}
+
+.h1 {
+  margin: 10px; 
+}
+
+.pos {
+  font-size: 13px;
+  margin: 0px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.card:hover .intro {
+  height: 80%;
+  background: rgba(27, 27, 27, 0.9);
+}
+
+.card:hover .pos {
+  opacity: 1;
+}
+.margin{
+  margin-top: 120%;
+}
+.margins{
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjust as needed */
+  max-width: 1200px; /* Adjust the maximum width */
+  margin-top: 20%;
+}

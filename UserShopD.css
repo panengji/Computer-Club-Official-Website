@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.background {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+    object-fit: cover;
+}
+
+.lspu {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 55px; 
+    height: auto;
+}
+
+.ccs {
+    position: absolute;
+    top: 10px;
+    left: 90px;
+    width: 55px; 
+    height: auto;
+}
+nav {
+    margin: 10px auto;
+    position: relative;
+    width: 575px;
+    height: 50px;
+    background-color: #952323;
+    border-radius: 8px;
+    font-size: 0;
+}
+
+nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+    background-color: #EAD196; 
+}
+
+a {
+    width: 115px;
+}
+
+#nav-animation {
+    width: 100px;
+    left: 0;
+}
+
+h1{
+    margin-left: 400px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+h4{
+    margin-left: 400px;
+    text-align: center;
+}
+
+.shop-button {
+    display: flex;
+    flex-direction: column; 
+    width: 100px;
+    position: absolute;
+    align-items: center;
+    /* margin-top: 150px;
+    margin-left: 55px; */
+    gap: 45px;
+    margin-left: 45%;
+    margin-top: 28%;
+}
+
+
+.shop-button a {
+    width: 150px;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #EAD196;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+.shop-button .NC:hover {
+    background-color: #fff;
+    color:#952323;
+}
+
+.shop-button .NC {
+    background-color: #952323;
+    color: #fff;
+}
+
+.shop-button .S {
+    background-color: #fff;
+    color: #952323;
+}
+
+.shop-button .S:hover{
+    background-color: #952323;
+    color: #fff;
+}
+
+h4 a{
+    font-weight: 500;
+    color: #363636;
+    display: block;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s;
+}
+h4 a:hover{
+    color:#952323;
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 18px;
+}
+
+
+/* shop1 */
+
+
+.container {
+    width: 1000px;
+    margin: auto;
+    transition: all 0.5s;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-top: 50px;
+}
+
+header .shopping {
+    text-align: right;
+}
+
+header .shopping img {
+    width: 40px;
+    position: fixed;
+    margin-top: -130px;
+    margin-left: -15px;
+}
+
+header .shopping span {
+    background-color: red;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    margin-top: -150px;
+    left: 80%;
+    padding: 3px 10px;
+}
+
+.list {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: -5%;
+}
+
+.card {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 500px;
+    background-color: #952323;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+.card h1 {
+    color: white;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.card .checkout {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card .checkout div {
+    background-color: yellow;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card .checkout div:nth-child(2) {
+    background-color: white;
+    color: black;
+}
+
+.active .card {
+    left: calc(100% - 500px);
+}
+
+.active .container {
+    transform: translateX(-200px);
+}
+
+.list .item {
+    text-align: center;
+    background-color: #dce0e1;
+    padding: 20px;
+    box-shadow: 0 20px 20px #757676;
+    letter-spacing: 1px;
+}
+
+
+/* Adjusted styles for the buttons in the shopping cart */
+.listcard button {
+    background-color: #1c1f25;
+    color: #fff;
+    padding: 5px 10px; /* Adjusted padding */
+    cursor: pointer;
+    border: none;
+    border-radius: 5px; /* Added border-radius for a rounded look */
+}
+
+.listcard button:hover {
+    background-color: #252831; /* Darken the background color on hover */
+}
+
+.listcard .count {
+    margin: 0 10px;
+    font-weight: bold; /* Make the count text bold */
+}
+
+.listcard .delete-btn {
+    background-color: #d9534f; /* Use a red color for the delete button */
+}
+
+.listcard .delete-btn:hover {
+    background-color: #c9302c; /* Darken the background color on hover */
+}
+
+
+.listcard {
+    max-height: 350px; 
+    overflow-y: auto; 
+    height: auto;
+}
+
+
+.list .item .title {
+    font-weight: 60;
+}
+
+.list .item .price {
+    margin: 10px;
+}
+
+.list .item button {
+    background-color: #1c1f25;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.listcard li {
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr); 
+    color: #fff;
+    row-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.listcard li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    size: 10px;
+}
+
+.listcard li img {
+    width: 60px; 
+    height: auto;
+}
+
+.listcard button {
+    width: auto;
+    background-color: #fff5;
+    border: none;
+}
+
+.listcard .count {
+    margin: 0 10px;
+}
+
+.card .checkout .pay {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    grid-column: span 2; /* Make the button span two columns */
+}

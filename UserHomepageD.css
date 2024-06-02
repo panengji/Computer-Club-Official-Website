@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.background {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+    object-fit: cover;
+}
+
+.ComClubLogo {
+    position: absolute;
+    top: 120px;
+    right: 100px;
+    width: 300px; 
+    height: auto;
+}
+
+.ComClubLogo:hover {
+    filter: drop-shadow(0px 0px 10px #9B4444) 
+}
+.lspu {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 55px; 
+    height: auto;
+}
+
+.ccs {
+    position: absolute;
+    top: 10px;
+    left: 90px;
+    width: 55px; 
+    height: auto;
+}
+nav {
+    margin: 10px auto;
+    position: relative;
+    width: 575px;
+    height: 50px;
+    background-color: #952323;
+    border-radius: 8px;
+    font-size: 0;
+}
+
+nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+    background-color: #EAD196; 
+}
+
+a {
+    width: 115px;
+}
+
+#nav-animation {
+    width: 100px;
+    left: 0;
+}
+
+body {
+    font-size: 12px;
+}
+
+.button, .button-in {
+    padding: 10px 20px; 
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 15px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+.buttons {
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.button:hover, .button-in:hover {
+    background-color: white;
+    color: black;
+}
+
+.button {
+    color: white;
+}
+
+.button-in {
+    background-color: maroon;
+}
+
+.text1 {
+    margin-top: 50px;
+    padding: 40px;
+    text-align: left;
+}
+
+.text1_1:hover{
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
+p {
+    color: white;
+    font-size: 17px;
+}
+.Incoming-Events {
+    position: relative;
+    display: inline-block;
+    background-color: white; 
+    color: #952323; 
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    overflow: hidden;
+    transition: 0.3s;
+    margin-top: 3%;
+    margin-left: 32%;
+}
+
+.Incoming-Events a {
+    text-decoration: none;
+    color: inherit;
+    padding-right: 5px;
+}
+
+.Incoming-Events i {
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
+
+.Incoming-Events:hover {
+    background-color: maroon; 
+    color: white;
+}
+
+.Incoming-Events:hover i {
+    right:5px; 
+}
+
+.Birthday-Announcement {
+    position: relative;
+    display: inline-block;
+    background-color: white; 
+    color: maroon; 
+    padding: 10px 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.Birthday-Announcement a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Birthday-Announcement i {
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
+
+.Birthday-Announcement:hover {
+    background-color: maroon; 
+    color: white;
+}
+
+.Birthday-Announcement:hover i {
+    right: 10px; 
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;    
+    font-weight: 100;
+    margin-top: 40px;
+    padding-top: 10px;
+    border-top: 1px solid #555;
+    margin-bottom: 10px;
+}
+

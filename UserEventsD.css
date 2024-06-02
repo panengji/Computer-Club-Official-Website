@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+.background {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+    object-fit: cover;
+}
+.lspu {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 55px; 
+    height: auto;
+  }
+  
+  .ccs {
+    position: absolute;
+    top: 10px;
+    left: 90px;
+    width: 55px; 
+    height: auto;
+  }
+  nav {
+    margin: 10px auto;
+    position: relative;
+    width: 575px;
+    height: 50px;
+    background-color: #952323;
+    border-radius: 8px;
+    font-size: 0;
+  }
+  
+  nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+  }
+  
+  nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+    background-color: #EAD196; 
+  }
+  
+  a {
+    width: 115px;
+  }
+  
+  #nav-animation {
+    width: 100px;
+    left: 0;
+  }
+  
+body{
+    min-height: 100vh;
+    width: 100%;
+    font-size: 16px;
+    background: #eee;
+    color: #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    margin: 10px auto;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 575px;
+    height: 50px;
+    background-color: #952323;
+    border-radius: 8px;
+    font-size: 0;
+}
+
+nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+nav .animation {
+    position: absolute; 
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+    background-color: #EAD196; 
+}
+
+a {
+    width: 115px;
+}
+
+#nav-animation {
+    width: 100px;
+    left: 0;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px; 
+}
+
+.item-container{
+    position: relative;
+    margin: 24px;
+    width: 320px;
+    height: 500px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 30px 5px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+.img-container, .body-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+}
+
+.img-container img{
+    width: 100%;
+}
+
+.body-container{
+    position: relative;
+}
+
+.overlay{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(67, 4, 4, 0.6);
+    opacity: 0;
+    transition: height linear 0.4s, opacity linear 0.2s;
+}
+
+.item-container:hover .overlay{
+    opacity: 1;
+    height: 130px;
+}
+
+.event-info{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.title, .price{
+    color: #6e2e05;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 10px;
+}
+
+.info{
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+.separator{
+    width: 20%;
+    height: 6px;
+    background-color:#952323;
+    margin-bottom: 10px;
+}
+
+.additional-info{
+    border-top: 1px solid #bbb;
+    margin-top: 12px;
+    padding: 28px;
+    padding-bottom: 0;
+}
+
+.additional-info .info{
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.info i{
+    color:#952323;
+    font-size: 1.1em;
+    margin-right: 4px;
+}
+
+.info span{
+    color: #952323;
+    font-weight: bolder;
+}
+
+.action{
+    color: #fff;
+    border: 3px solid #fff;
+    background-color: transparent;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: background-color 0.4s, top.0.4s;
+}
+
+.item-container:hover .action{
+    top: 30px;
+}
+
+.action:hover{
+    background-color:rgba(255,255,255,0.2) ;
+}
+
+
